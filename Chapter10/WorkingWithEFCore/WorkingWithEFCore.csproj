@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<ItemGroup>
+  <Using Include="System.Console" Static="true" />
+</ItemGroup>
+
+<ItemGroup>
+    <PackageReference Version="5.2.0" Include="Microsoft.Data.SqlClient" />
+    <PackageReference Version="8.0.4" Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Version="8.0.4" Include="Microsoft.EntityFrameworkCore.Design" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.EntityModels\Northwind.EntityModels.csproj" />
+  </ItemGroup>
+</Project>
